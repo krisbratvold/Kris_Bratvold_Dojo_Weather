@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <h1>DojoWeather</h1>
+        <div class="navRight">
+            <h3 onclick="alert('Loading weather report...')">Burbank</h3>
+            <h3 onclick="alert('Loading weather report...')">Chicago</h3>
+            <h3 onclick="alert('Loading weather report...')">Dallas</h3>
+        </div>
+    </div>
+    <div class="container">
+        <div class="city">
+            <h1>San Jose</h1>
+            <div class="cityRight">
+                <p>show temperature in</p>
+                <select onchange="newTemp()" name="temp" id="temp">
+                    <option value="celcius">&#176;C</option>
+                    <option value="fahrenheit">&#176;F</option>
+                </select>
+            </div>
+        </div>
+        <div class="weather">
+            <div class="weatherBox">
+                <h2>Today</h2>
+                <img src="imgs\some_rain.png" alt="rain">
+                <p>some rain</p>
+                <div class="temp">
+                    <h3 id="red">23.9&#176;</h3>
+                    <h3 id="blue">18.3&#176;</h3>
+                </div>
+            </div>
+            <div class="weatherBox">
+                <h2>Tomorrow</h2>
+                <img src="imgs\some_sun.png" alt="sun">
+                <p>some sun</p>
+                <div class="temp">
+                    <h3 id="red">26.7&#176;</h3>
+                    <h3 id="blue">18.9&#176;</h3>
+                </div>
+            </div>
+            <div class="weatherBox">
+                <h2>Friday</h2>
+                <img src="imgs\some_clouds.png" alt="clouds">
+                <p>some clouds</p>
+                <div class="temp">
+                    <h3 id="red">20.6&#176;</h3>
+                    <h3 id="blue">16.1&#176;</h3>
+                </div>
+            </div>
+            <div class="weatherBox">
+                <h2>Saturday</h2>
+                <img src="imgs\some_sun.png" alt="sun">
+                <p>some sun</p>
+                <div class="temp">
+                    <h3 id="red">25.6&#176;</h3>
+                    <h3 id="blue">21.1&#176;</h3>
+                </div>
+            </div>
+        </div>
+        <div class="cookie">
+            <div class="cookie-pic">
+                <img src="imgs\cookie.png" alt="cookie">
+            </div>
+            <div class="text">
+                <h4><strong>Strop! Cookie time</strong></h4>
+                <p>We use cookies (sadly not he edible ones) to personalize content and ads, to provide social media features and the analyse our traffic <a href="read">Read more...</a></p>
+            </div>
+            <div class="bttn"></div>
+                <button onclick="hideBox()">I Accept</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
